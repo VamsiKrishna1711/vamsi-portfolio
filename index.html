@@ -1,0 +1,371 @@
+<!doctype html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Vamsi Krishna — cybersecurity portfolio focused on security operations, SIEM, threat detection, Windows security and hands-on defensive security labs.">
+<meta name="theme-color" content="#0d0d0d">
+<title>Vamsi Krishna | Security Operations &amp; Cybersecurity</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0d0d'/%3E%3Cpath d='M16 17h14v5H21v20h9v5H16zm18 8 14 7-14 7v-5l7-2-7-2z' fill='%234be277'/%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{background:'#0e150e',primary:'#4be277','primary-container':'#22c55e',surface:'#0e150e','surface-container-low':'#161d16','surface-container':'#1a221a','surface-container-lowest':'#091009','on-surface':'#dce5d9','on-surface-variant':'#bccbb9',outline:'#869585','outline-variant':'#3d4a3d','on-primary':'#003915'},fontFamily:{mono:['Geist Mono','monospace']},maxWidth:{container:'1200px'}}}}</script>
+<style>
+html{scroll-behavior:smooth}body{background:#0d0d0d;color:#bccbb9;font-family:'Geist Mono',monospace;overflow-x:hidden}::selection{background:#4be277;color:#003915}.grid-bg{background-image:linear-gradient(rgba(74,225,118,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(74,225,118,.045) 1px,transparent 1px);background-size:32px 32px}.terminal-glow{box-shadow:0 0 0 1px rgba(75,226,119,.05),0 18px 70px rgba(0,0,0,.34)}.cursor:after{content:'_';color:#4be277;animation:blink 1s step-end infinite}@keyframes blink{50%{opacity:0}}.reveal{animation:none}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.flow-node:not(:last-child):after{content:'↓';display:block;color:#4be277;text-align:center;padding:.38rem 0;font-size:1.1rem}.evidence{background:linear-gradient(135deg,rgba(75,226,119,.08),rgba(22,29,22,.95) 42%);min-height:180px}.skip{transform:translateY(-120%)}.skip:focus{transform:translateY(0)}
+</style>
+</head>
+<body class="antialiased">
+<a href="#main" class="skip fixed left-4 top-4 z-[100] bg-primary px-3 py-2 text-sm font-semibold text-on-primary transition-transform">Skip to content</a>
+<nav class="fixed inset-x-0 top-0 z-50 border-b border-outline-variant bg-[#0d0d0d]/90 backdrop-blur-md">
+<div class="mx-auto flex max-w-container items-center justify-between px-4 py-3 md:px-8">
+<a href="#home" class="font-semibold text-primary" aria-label="Vamsi Krishna home">/root/vamsi_krishna</a>
+<button id="menu" class="border border-outline-variant px-2 py-1 text-primary md:hidden" aria-expanded="false" aria-controls="links">MENU<span class="sr-only"> navigation</span>
+</button>
+<div id="links" class="absolute left-0 right-0 top-full hidden border-b border-outline-variant bg-[#0d0d0d] px-4 py-4 md:static md:flex md:gap-6 md:border-0 md:bg-transparent md:p-0">
+<a class="block py-2 text-xs hover:text-primary md:py-0" href="#whoami">WHOAMI</a>
+<a class="block py-2 text-xs hover:text-primary md:py-0" href="#experience">EXPERIENCE</a>
+<a class="block py-2 text-xs hover:text-primary md:py-0" href="#projects">PROJECTS</a>
+<a class="block py-2 text-xs hover:text-primary md:py-0" href="#achievements">ACHIEVEMENTS</a>
+<a class="block py-2 text-xs hover:text-primary md:py-0" href="#toolkit">TOOLKIT</a>
+<a class="block py-2 text-xs hover:text-primary md:py-0" href="#contact">CONTACT</a>
+</div>
+</div>
+</nav>
+<main id="main">
+<section id="home" class="grid-bg flex min-h-screen items-center border-b border-outline-variant px-4 pt-20 md:px-8">
+<div class="mx-auto grid w-full max-w-container gap-10 py-16 lg:grid-cols-[1.25fr_.75fr] lg:items-center">
+<div class="reveal">
+<p class="mb-4 text-xs font-medium tracking-[.2em] text-primary">[ SECURITY_OPERATIONS / ENTRY_LEVEL ]</p>
+<h1 class="text-4xl font-bold leading-[.95] tracking-[-.065em] text-on-surface sm:text-6xl md:text-7xl">VEERAMALLU<br>
+<span class="text-primary">VAMSI KRISHNA</span>
+</h1>
+<p class="cursor mt-6 max-w-2xl text-base leading-7 text-on-surface-variant">Final-year CSE student pursuing cybersecurity through hands-on labs, TryHackMe training, and personal projects.</p>
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="#projects" class="border border-primary bg-primary px-5 py-3 text-xs font-semibold text-on-primary hover:bg-transparent hover:text-primary">VIEW PROJECTS</a>
+<a href="https://github.com/VamsiKrishna1711" target="_blank" rel="noopener noreferrer" class="border border-primary px-5 py-3 text-xs font-semibold text-primary hover:bg-primary hover:text-on-primary">GITHUB ↗</a>
+</div>
+<dl class="mt-10 grid max-w-xl grid-cols-2 gap-px border border-outline-variant bg-outline-variant text-xs sm:grid-cols-4">
+<div class="bg-[#0d0d0d] p-3">
+<dt class="text-[10px]">LOCATION</dt>
+<dd class="mt-1 text-on-surface">Hyderabad, India</dd>
+</div>
+<div class="bg-[#0d0d0d] p-3">
+<dt class="text-[10px]">FOCUS</dt>
+<dd class="mt-1 text-on-surface">SOC / Security Ops</dd>
+</div>
+<div class="bg-[#0d0d0d] p-3">
+<dt class="text-[10px]">TRAINING</dt>
+<dd class="mt-1 text-on-surface">THM SOC Pathway</dd>
+</div>
+<div class="bg-[#0d0d0d] p-3">
+<dt class="text-[10px]">STATUS</dt>
+<dd class="mt-1 text-primary">Open to roles</dd>
+</div>
+</dl>
+</div>
+<aside class="terminal-glow border border-outline-variant bg-[#141414] p-5 text-sm reveal" style="animation-delay:.12s">
+<div class="mb-5 flex gap-1.5 border-b border-outline-variant pb-3">
+<i class="h-2.5 w-2.5 rounded-full bg-red-400">
+</i>
+<i class="h-2.5 w-2.5 rounded-full bg-yellow-300">
+</i>
+<i class="h-2.5 w-2.5 rounded-full bg-primary">
+</i>
+</div>
+<p>
+<span class="text-primary">vamsi@portfolio:~$</span> cat profile.txt</p>
+<div class="mt-4 space-y-2 border-l border-primary/50 pl-4 text-on-surface-variant">
+<p>
+<span class="text-primary">role:</span> final-year CSE student</p>
+<p>
+<span class="text-primary">direction:</span> cybersecurity / SOC</p>
+<p>
+<span class="text-primary">labs:</span> SIEM, Sysmon, Active Directory</p>
+<p>
+<span class="text-primary">learning:</span> defensive security workflows</p>
+</div>
+<p class="cursor mt-5 text-primary">vamsi@portfolio:~$</p>
+</aside>
+</div>
+</section>
+<section id="whoami" class="mx-auto max-w-container px-4 py-20 md:px-8">
+<div class="mb-8 flex items-center gap-3">
+<span class="text-primary">01</span>
+<h2 class="text-xl font-semibold text-on-surface">WHOAMI</h2>
+<span class="h-px flex-1 bg-outline-variant">
+</span>
+</div>
+<div class="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
+<p class="text-xs leading-6 text-primary">$ whoami<br>
+<span class="text-on-surface-variant">final-year computer science student building practical foundations in defensive security.</span>
+</p>
+<p class="max-w-3xl text-lg leading-8 text-on-surface-variant">I’m Vamsi Krishna, a final-year Computer Science student in Hyderabad actively pursuing cybersecurity. I’m focused on SOC and security operations, using personal labs and projects to develop practical skills with Splunk, Sysmon, Kali Linux, and Windows / Active Directory fundamentals.</p>
+</div>
+</section>
+<section id="projects" class="border-y border-outline-variant bg-surface-container-low py-20">
+<div class="mx-auto max-w-container px-4 md:px-8">
+<div class="mb-8 flex items-center gap-3">
+<span class="text-primary">02</span>
+<h2 class="text-xl font-semibold text-on-surface">PROJECTS <span class="text-on-surface-variant">/ CASE STUDIES</span>
+</h2>
+<span class="h-px flex-1 bg-outline-variant">
+</span>
+</div>
+<p class="mb-10 max-w-3xl text-on-surface-variant">Personal projects and controlled simulations — presented with the evidence and scope available.</p>
+<article class="terminal-glow mb-8 border border-primary/70 bg-[#111611] p-5 md:p-8" aria-labelledby="siem">
+<div class="mb-6 flex flex-wrap items-start justify-between gap-4 border-b border-outline-variant pb-5">
+<div>
+<p class="text-xs text-primary">PROJECT_01 / PERSONAL_HOME_LAB</p>
+<h3 id="siem" class="mt-2 text-3xl font-semibold tracking-tight text-on-surface">SIEM HOME LAB</h3>
+</div>
+<a href="https://github.com/VamsiKrishna1711/siem-home-lab" target="_blank" rel="noopener noreferrer" class="border border-primary px-4 py-2 text-xs font-semibold text-primary hover:bg-primary hover:text-on-primary">VIEW ON GITHUB ↗</a>
+</div>
+<p class="max-w-4xl text-lg leading-8 text-on-surface-variant">Built a SOC-style home lab simulating threat detection workflows using Splunk and Sysmon on a local virtual network.</p>
+<div class="mt-7 grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+<div class="space-y-6">
+<div>
+<h4 class="mb-3 text-xs font-semibold text-primary">WHAT I BUILT / INVESTIGATED</h4>
+<ul class="space-y-2 text-sm leading-6 text-on-surface-variant">
+<li>• Configured Active Directory with domain users and monitored authentication events via Windows Event Logs.</li>
+<li>• Created Splunk dashboards and alerts for failed logins, process creation, and reconnaissance activity.</li>
+<li>• Simulated basic attacker behavior with Kali Linux and Nmap.</li>
+<li>• Mapped findings to the MITRE ATT&amp;CK framework.</li>
+</ul>
+</div>
+<div>
+<h4 class="mb-3 text-xs font-semibold text-primary">TECHNOLOGIES</h4>
+<p class="text-sm text-on-surface-variant">Splunk · Sysmon · Active Directory · Kali Linux · VirtualBox</p>
+</div>
+<details class="border border-outline-variant bg-surface-container-lowest p-4">
+<summary class="cursor-pointer text-sm font-semibold text-on-surface">Open case study notes</summary>
+<div class="mt-4 grid gap-4 text-sm leading-6 text-on-surface-variant sm:grid-cols-2">
+<p>
+<b class="text-primary">OBJECTIVE</b>
+<br>Simulate threat detection workflows in a SOC-style home lab.</p>
+<p>
+<b class="text-primary">ENVIRONMENT</b>
+<br>Local virtual network using Windows Server, Active Directory, Kali Linux, and VirtualBox.</p>
+<p>
+<b class="text-primary">LOG SOURCES</b>
+<br>Windows Event Logs and Sysmon.</p>
+<p>
+<b class="text-primary">DETECTION</b>
+<br>Failed logins, process creation, and reconnaissance activity in Splunk.</p>
+<p>
+<b class="text-primary">INVESTIGATION</b>
+<br>Investigated process creation, failed and successful logons, security events, and Nmap reconnaissance activity in Splunk.</p>
+<p>
+<b class="text-primary">MITRE ATT&amp;CK</b>
+<br>T1046 (Network Service Scanning), T1078 (Valid Accounts), and T1110 (Brute Force).</p>
+<p>
+<b class="text-primary">LESSONS LEARNED</b>
+<br>Built practical experience collecting, investigating, and visualizing Windows security telemetry.</p>
+</div>
+</details>
+</div>
+<div>
+<h4 class="mb-3 text-xs font-semibold text-primary">LAB FLOW</h4>
+<div class="border border-outline-variant bg-surface-container-lowest p-4 text-center text-xs">
+<div class="flow-node border border-outline-variant p-3 text-on-surface">KALI LINUX</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">NMAP / BASIC ATTACKER ACTIVITY</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">WINDOWS SERVER + ACTIVE DIRECTORY</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">WINDOWS EVENT LOGS + SYSMON</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">SPLUNK</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">DASHBOARDS / ALERTS</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">DETECTION / INVESTIGATION</div>
+<div class="flow-node border border-primary p-3 text-primary">MITRE ATT&amp;CK</div>
+</div>
+<figure class="mt-4 overflow-hidden border border-primary/50">
+<img class="h-auto w-full" src="assets/siem-dashboard.png" width="1024" height="768" alt="Real Splunk SOC monitoring dashboard screenshot showing process creation events from the SIEM Home Lab">
+<figcaption class="border-t border-outline-variant bg-surface-container-lowest p-3 text-xs text-on-surface-variant">VISUAL EVIDENCE / Splunk SOC monitoring dashboard — process creation events</figcaption>
+</figure>
+</div>
+</div>
+</article>
+<article class="terminal-glow border border-outline-variant bg-[#111611] p-5 md:p-8" aria-labelledby="phish">
+<div class="mb-6 flex flex-wrap items-start justify-between gap-4 border-b border-outline-variant pb-5">
+<div>
+<p class="text-xs text-primary">PROJECT_02 / CONTROLLED_SIMULATION</p>
+<h3 id="phish" class="mt-2 text-3xl font-semibold tracking-tight text-on-surface">PHISHING SIMULATOR</h3>
+</div>
+<a href="https://github.com/VamsiKrishna1711/Phishing-simulator" target="_blank" rel="noopener noreferrer" class="border border-primary px-4 py-2 text-xs font-semibold text-primary hover:bg-primary hover:text-on-primary">VIEW ON GITHUB ↗</a>
+</div>
+<p class="max-w-4xl text-lg leading-8 text-on-surface-variant">Built a phishing simulation tool with fake login pages, click-tracking, and a simple campaign dashboard.</p>
+<div class="mt-7 grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+<div class="space-y-6">
+<div>
+<h4 class="mb-3 text-xs font-semibold text-primary">WHAT I BUILT / IMPLEMENTED</h4>
+<ul class="space-y-2 text-sm leading-6 text-on-surface-variant">
+<li>• Implemented user authentication, session management, audit logging, and basic input validation.</li>
+<li>• Designed an admin panel for viewing campaign results.</li>
+<li>• Added basic risk scoring.</li>
+</ul>
+</div>
+<div>
+<h4 class="mb-3 text-xs font-semibold text-primary">TECHNOLOGIES</h4>
+<p class="text-sm text-on-surface-variant">Python (Flask) · JavaScript · SQLite · SMTP · HTML/CSS</p>
+</div>
+<details class="border border-outline-variant bg-surface-container-lowest p-4">
+<summary class="cursor-pointer text-sm font-semibold text-on-surface">Open case study notes</summary>
+<div class="mt-4 grid gap-4 text-sm leading-6 text-on-surface-variant sm:grid-cols-2">
+<p>
+<b class="text-primary">OBJECTIVE</b>
+<br>Build a controlled phishing simulation tool.</p>
+<p>
+<b class="text-primary">ARCHITECTURE</b>
+<br>Python and Flask platform with JavaScript, SQLite, and HTML/CSS.</p>
+<p>
+<b class="text-primary">SIMULATION FLOW</b>
+<br>Fake login pages, user interaction, click-tracking, campaign dashboard, and basic risk scoring.</p>
+<p>
+<b class="text-primary">TECHNOLOGY</b>
+<br>Python (Flask), JavaScript, SQLite, SMTP, and HTML/CSS.</p>
+<p>
+<b class="text-primary">TRACKING</b>
+<br>Click-tracking.</p>
+<p>
+<b class="text-primary">AUDIT LOGGING</b>
+<br>Implemented audit logging.</p>
+<p>
+<b class="text-primary">LESSONS LEARNED</b>
+<br>Implemented authentication, session management, audit logging, activity tracking, and basic risk scoring.</p>
+</div>
+</details>
+</div>
+<div>
+<h4 class="mb-3 text-xs font-semibold text-primary">SIMULATION FLOW</h4>
+<div class="border border-outline-variant bg-surface-container-lowest p-4 text-center text-xs">
+<div class="flow-node border border-outline-variant p-3 text-on-surface">SIMULATION</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">FAKE LOGIN PAGE</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">USER INTERACTION</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">CLICK TRACKING</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">CAMPAIGN DASHBOARD</div>
+<div class="flow-node border border-outline-variant p-3 text-on-surface">RISK SCORING</div>
+<div class="flow-node border border-primary p-3 text-primary">AUDIT LOGS</div>
+</div>
+<figure class="mt-4 overflow-hidden border border-primary/50">
+<img class="h-auto w-full" src="assets/phishing-simulator.png" width="1847" height="887" alt="Real screenshot of the Phishing Simulator security awareness training platform">
+<figcaption class="border-t border-outline-variant bg-surface-container-lowest p-3 text-xs text-on-surface-variant">VISUAL EVIDENCE / Phishing Simulator interface</figcaption>
+</figure>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section id="achievements" class="mx-auto max-w-container px-4 py-20 md:px-8">
+<div class="mb-8 flex items-center gap-3">
+<span class="text-primary">03</span>
+<h2 class="text-xl font-semibold text-on-surface">ACHIEVEMENTS / CERTIFICATIONS</h2>
+<span class="h-px flex-1 bg-outline-variant">
+</span>
+</div>
+<div class="grid gap-5 md:grid-cols-2">
+<a href="https://tryhackme.com/p/VAMS1" target="_blank" rel="noopener noreferrer" class="terminal-glow block border border-primary bg-surface-container-low p-6 hover:-translate-y-1 hover:bg-surface-container">
+<p class="text-xs tracking-[.18em] text-primary">TRYHACKME</p>
+<h3 class="mt-4 text-2xl font-semibold text-on-surface">SOC PATHWAY</h3>
+<p class="mt-7 text-5xl font-bold tracking-[-.06em] text-primary">TOP 5%</p>
+<p class="mt-4 text-xs text-on-surface-variant">View profile ↗</p>
+</a>
+<div class="border border-outline-variant bg-surface-container-low p-6">
+<p class="text-xs tracking-[.18em] text-primary">CERTIFICATION / TRAINING</p>
+<h3 class="mt-4 text-xl font-semibold text-on-surface">GOOGLE CYBERSECURITY PROFESSIONAL CERTIFICATE</h3>
+<p class="mt-2 text-sm text-on-surface-variant">Coursera</p>
+<p class="mt-7 text-sm leading-6 text-on-surface-variant">Completed hands-on labs in Linux, SQL, and Python within cybersecurity contexts. Covered risk management, threat analysis, and core security operations concepts.</p>
+</div>
+</div>
+</section>
+<section id="experience" class="border-y border-outline-variant bg-surface-container-low py-20">
+<div class="mx-auto max-w-container px-4 md:px-8">
+<div class="mb-8 flex items-center gap-3">
+<span class="text-primary">04</span>
+<h2 class="text-xl font-semibold text-on-surface">EXPERIENCE</h2>
+<span class="h-px flex-1 bg-outline-variant">
+</span>
+</div>
+<article class="border-l-2 border-primary bg-[#111611] p-5 md:p-7">
+<div class="flex flex-wrap justify-between gap-3">
+<div>
+<p class="text-xs text-primary">ZARAVYA TECHNOLOGIES</p>
+<h3 class="mt-2 text-xl font-semibold text-on-surface">Software Engineer Intern</h3>
+</div>
+<p class="text-sm text-on-surface-variant">May 2026 – Present</p>
+</div>
+<ul class="mt-6 max-w-4xl space-y-2 text-sm leading-6 text-on-surface-variant">
+<li>• Testing web application functionality across loyalty and HR platforms using Postman and Chrome DevTools.</li>
+<li>• Analyzing API responses and identifying edge cases, inconsistent behavior, and input handling issues.</li>
+<li>• Exploring security-relevant flows such as OTP handling and session behavior as part of personal learning.</li>
+<li>• Documenting issues with reproduction steps, severity notes, and suggested fixes.</li>
+<li>• Performing cross-browser and UI responsiveness testing on live applications.</li>
+</ul>
+</article>
+<div class="mt-8 border border-outline-variant p-5">
+<p class="text-xs text-primary">EDUCATION</p>
+<div class="mt-3 flex flex-col justify-between gap-2 md:flex-row">
+<div>
+<h3 class="text-lg font-semibold text-on-surface">DRK Institute of Science &amp; Technology</h3>
+<p class="mt-1 text-sm text-on-surface-variant">B.Tech, Computer Science &amp; Engineering · 4th Year · Hyderabad</p>
+</div>
+<p class="text-sm text-primary">CGPA: 7.5</p>
+</div>
+</div>
+</div>
+</section>
+<section id="toolkit" class="mx-auto max-w-container px-4 py-20 md:px-8">
+<div class="mb-8 flex items-center gap-3">
+<span class="text-primary">05</span>
+<h2 class="text-xl font-semibold text-on-surface">SECURITY TOOLKIT</h2>
+<span class="h-px flex-1 bg-outline-variant">
+</span>
+</div>
+<div class="grid gap-5 md:grid-cols-3">
+<div class="border border-outline-variant p-5">
+<h3 class="text-sm font-semibold text-primary">CYBERSECURITY</h3>
+<p class="mt-4 text-sm leading-7 text-on-surface-variant">Splunk · Sysmon · Active Directory Basics · MITRE ATT&amp;CK · Threat Detection · Log Analysis · SOC Workflows · Phishing Simulation</p>
+</div>
+<div class="border border-outline-variant p-5">
+<h3 class="text-sm font-semibold text-primary">TOOLS &amp; OS</h3>
+<p class="mt-4 text-sm leading-7 text-on-surface-variant">Kali Linux · Windows Server · Linux CLI · Postman · Chrome DevTools · VirtualBox · Git &amp; GitHub · Wireshark <span class="text-primary">(learning)</span>
+</p>
+</div>
+<div class="border border-outline-variant p-5">
+<h3 class="text-sm font-semibold text-primary">DEVELOPMENT</h3>
+<p class="mt-4 text-sm leading-7 text-on-surface-variant">Python · Flask · JavaScript · HTML5 · CSS3 · SQL · SQLite</p>
+</div>
+</div>
+</section>
+<section id="contact" class="border-t border-outline-variant bg-surface-container-lowest">
+<div class="mx-auto max-w-container px-4 py-20 md:px-8">
+<div class="mb-8 flex items-center gap-3">
+<span class="text-primary">06</span>
+<h2 class="text-xl font-semibold text-on-surface">CONTACT</h2>
+<span class="h-px flex-1 bg-outline-variant">
+</span>
+</div>
+<div class="grid gap-8 md:grid-cols-2">
+<div>
+<p class="text-xs text-primary">SECURE CHANNEL / LET'S CONNECT</p>
+<a class="mt-4 block break-all text-xl font-semibold text-on-surface hover:text-primary sm:text-2xl" href="mailto:veeramalluvamsi12345@gmail.com">veeramalluvamsi12345@gmail.com</a>
+<p class="mt-3 text-sm text-on-surface-variant">Hyderabad, Telangana, India</p>
+</div>
+<div class="flex flex-wrap content-start gap-3">
+<a href="https://linkedin.com/in/veeramalluvamsi" target="_blank" rel="noopener noreferrer" class="border border-outline-variant px-4 py-3 text-xs text-on-surface hover:border-primary hover:text-primary">LINKEDIN ↗</a>
+<a href="https://github.com/VamsiKrishna1711" target="_blank" rel="noopener noreferrer" class="border border-outline-variant px-4 py-3 text-xs text-on-surface hover:border-primary hover:text-primary">GITHUB ↗</a>
+<a href="https://tryhackme.com/p/VAMS1" target="_blank" rel="noopener noreferrer" class="border border-outline-variant px-4 py-3 text-xs text-on-surface hover:border-primary hover:text-primary">TRYHACKME ↗</a>
+<a href="./resume/Vamsi_Krishna_Resume.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="border border-primary px-4 py-3 text-xs text-primary hover:bg-primary hover:text-on-primary">
+   RESUME ↗
+</a></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-outline-variant px-4 py-6 text-center text-xs text-on-surface-variant">
+<span class="text-primary">/dev/vamsi_krishna</span> · Security Operations &amp; Cybersecurity</footer>
+<script>const b=document.getElementById('menu'),n=document.getElementById('links');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('hidden')});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<768){n.classList.add('hidden');b.setAttribute('aria-expanded','false')}}));</script>
+</body>
+</html>
